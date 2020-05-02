@@ -7,6 +7,8 @@ plugins=(
   git
   zsh-syntax-highlighting
   zsh-autosuggestions
+  jump
+  autojump
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -15,3 +17,6 @@ source $ZSH/oh-my-zsh.sh
 alias zshrld="source ~/.zshrc"
 alias pbcopy="xclip -selection clipboard"
 alias pbpaste="xclip -selection clipboard -o"
+alias e="emacsclient -a -c"
+
+. /usr/share/autojump/autojump.sh

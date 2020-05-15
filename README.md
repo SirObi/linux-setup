@@ -29,5 +29,25 @@ Install plugins for `Zsh`:
 ## Emacs setup
 `sudo apt install emacs`  
 `git clone https://github.com/purcell/emacs.d.git ~/.emacs.d`  
-This might take a while:  
+
+I've found plain emacs gets pretty slow with time.  
+For lightning speed and flow states, you want to start an emacs daemon and then use the  
+`emacsclient` command.  
+
+### Start emacs daemon
+This might take a while the first time around (but much quicker after that):  
 `emacs --daemon`  
+
+### Use emacsclient command  
+You can now run emacs with the `emacslient` command.
+
+It's a bit of a mouthful (fingerful?) to type - I prefer to set an alias here:  
+`echo -e 'alias e="emacsclient -a -c"' >> ~/.zshrc`  
+
+Now you can open your files with Emacs like so:  
+`e somefile`  
+
+And the current directory like so:  
+`e .`  
+
+Nice.  

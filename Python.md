@@ -40,7 +40,20 @@ You can use `python global` to set it to something else. Or `python local` to as
 For more info, check out this:  
 https://github.com/pyenv/pyenv#installation  
 
+## Install pipenv  
+Pipenv allows you to create virtual environments, avoid the usual pip problems, and it keeps you in a flow state (well, usually).  
+`sudo apt install pipenv`  
 
+## Install cookiecutter  
+This will allow you to bootstrap small projects with reasonable defaults, and get cracking with the development.  
+`sudo apt install cookiecutter`  
 
+A fun template to use is:  
+`cookiecutter gh:sourcery-ai/python-best-practices-cookiecutter`  
 
+It's got fun features like autoformatting (`black`), type-checking (`mypy`), and pre-commit and pre-push hooks. All in all, it saves you a lot of boring headache.  
 
+Run commands from the template's README:  
+`pipenv install --dev`  
+`pipenv run pre-commit install -t pre-commit`  
+`pipenv run pre-commit install -t pre-push`  

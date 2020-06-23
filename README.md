@@ -27,8 +27,12 @@ Install plugins for `Zsh`:
 `cp .zshrc ~/.zshrc`  
 
 ## Emacs setup
-`sudo apt install emacs`  
-`git clone https://github.com/purcell/emacs.d.git ~/.emacs.d`  
+`sudo apt install emacs`
+
+If ~/.emacs.d already exists, you will need to delete it before cloning purcell's emacs configuration
+`rm -rf ~/.emacs.d`
+`git clone https://github.com/purcell/emacs.d.git ~/.emacs.d`
+
 
 I've found plain emacs gets pretty slow with time.  
 For lightning speed and flow states, you want to start an emacs daemon and then use the  
@@ -42,7 +46,8 @@ This might take a while the first time around (but much quicker after that):
 You can now run emacs with the `emacslient` command.
 
 It's a bit of a mouthful (fingerful?) to type - I prefer to set an alias here:  
-`echo -e 'alias e="emacsclient -a -c"' >> ~/.zshrc`  
+`echo -e 'alias e="emacsclient -a -c"' >> ~/.zshrc`
+To use this alias you may need to exit your shell first.
 
 Now you can open your files with Emacs like so:  
 `e somefile`  

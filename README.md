@@ -35,8 +35,12 @@ For lightning speed and flow states, you want to start an emacs daemon and then 
 `emacsclient` command.  
 
 ### Start emacs daemon
-This might take a while the first time around (but much quicker after that):  
+Use the following guide to add the Emacs server to your init system:  
+https://www.emacswiki.org/emacs/EmacsAsDaemon  
+
+Or if you're keen to just try it out and get Emacs running right now: 
 `emacs --daemon`  
+(This might take a while the first time around (but much quicker after that))
 
 ### Use emacsclient command  
 You can now run emacs with the `emacslient` command.

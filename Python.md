@@ -25,7 +25,7 @@ Reload your shell:
 See if pyenv works (should print a list of Python versions available online):  
 `pyenv install --list`  
 
-Install build dependencies:  
+Install build dependencies (not needed on MacOS, if you've got Homebrew and xcode dev tools installed already):  
 `sudo apt install --no-install-recommends make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev`  
 
 Install a fresh distribution of Python:  

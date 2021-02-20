@@ -16,6 +16,7 @@
 ## Insert missing imports  
 `pyimport` ?
 
+# Copy and paste from clipboard
 
 # Things to bear in mind  
 `elpy-config`  

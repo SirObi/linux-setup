@@ -51,10 +51,10 @@ Or if you're keen to just try it out and get Emacs running right now:
 
 
 ### Use emacsclient command  
-You can now run emacs with the `emacslient` command.
+You can now open the current directory with emacs by executing the `emacsclient .` command.
 
-It's a bit of a mouthful (fingerful?) to type - I prefer to set an alias here:  
-`echo -e 'alias e="emacsclient -a -c"' >> ~/.zshrc`  
+It's a bit of a mouthful (fingerful?) to type - I prefer to alias `emacsclient` to `e`:  
+`echo -e 'alias e="emacsclient -a -c"' >> ~/.zshrc`  (or whatever your shell config file is, e.g. `.bashrc`)  
 
 Now you can open your files with Emacs like so:  
 `e somefile`  

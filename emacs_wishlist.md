@@ -1,4 +1,8 @@
 # Emacs wishlist (WIP)  
+
+## Select word on double click  
+`wrap-region` package  
+
 ## Import suggestions  
 
 ## Autoordering of imports  

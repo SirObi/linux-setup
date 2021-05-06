@@ -39,8 +39,7 @@ Python 3.8.3 is now the default for your shell.
 You can use `python global` to set it to something else. Or `python local` to assign a Python version to a project you're currently in.  
 For more info, check out this:  
 https://github.com/pyenv/pyenv#installation  
-
-## Install pipenv  
+https://github.com/mahmoud/boltons
 Pipenv allows you to create virtual environments, avoid the usual pip problems, and it keeps you in a flow state (well, usually).  
 `sudo apt install pipenv`  
 
@@ -57,3 +56,6 @@ Run commands from the template's README:
 `pipenv install --dev`  
 `pipenv run pre-commit install -t pre-commit`  
 `pipenv run pre-commit install -t pre-push`  
+
+## Notes
+https://github.com/mahmoud/boltons

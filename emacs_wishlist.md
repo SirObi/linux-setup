@@ -10,6 +10,10 @@
 ## Method suggestions  
 
 ## Look up function definition (goto declaration in new pane)  
+`C-c` + `.`  (`jedi:goto-definition`)  
+
+Go back:  
+`C-c` + `,`
 
 ## blacken on save  
 

@@ -8,6 +8,18 @@ This assumes you installed Purcell's emacs.d (not sure which package does this e
 ## Import suggestions  
 
 ## Autoordering of imports  
+`sudo apt install isort`  
+
+In Emacs:  
+`M-x package-install RET`  
+`py-isort RET`  
+
+Apply on currently open file:  
+`M-x py-isort-buffer`  
+
+Can be made to work automatically on save:  
+https://github.com/paetzke/py-isort.el
+
 
 ## Autocompletion of imports
 `jedi:complete`  

@@ -13,10 +13,12 @@
 ## Method suggestions  
 
 ## Look up function definition (goto declaration in new pane)  
-`C-c` + `.`  (`jedi:goto-definition`)  
+`M-.`
 
 Go back:  
-`C-c` + `,`
+`M-,`
+
+This assumes you installed Purcell's emacs.d (which contains the `anaconda-mode`).  
 
 ## blacken on save  
 

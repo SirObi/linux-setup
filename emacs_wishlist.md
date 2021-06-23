@@ -7,6 +7,9 @@
 
 ## Autoordering of imports  
 
+## Autocompletion of imports
+`jedi:complete`  
+
 ## Method suggestions  
 
 ## Look up function definition (goto declaration in new pane)  

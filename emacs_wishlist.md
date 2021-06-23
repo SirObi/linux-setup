@@ -12,6 +12,11 @@
 
 ## Method suggestions  
 
+## Find all instances of variable / class  
+`M-r`  
+
+This assumes you installed Purcell's emacs.d (which contains the `anaconda-mode`).  
+
 ## Look up function definition (goto declaration in new pane)  
 `M-.`
 

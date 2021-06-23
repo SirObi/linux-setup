@@ -1,7 +1,9 @@
 # Emacs wishlist (WIP)  
 
 ## Select word on double click  
-`wrap-region` package  
+Should be available by default.   
+
+This assumes you installed Purcell's emacs.d (not sure which package does this exactly
 
 ## Import suggestions  
 

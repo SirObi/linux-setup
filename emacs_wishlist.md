@@ -129,8 +129,17 @@ This assumes you installed Purcell's emacs.d (not sure which package does this e
 
 --- 
 
+## Inspirations  
 
+Using Elpy  
 
+Leighton Pritchard (widdowquinn)'s `Turning Emacs into a Python IDE `  
+https://gist.github.com/widdowquinn/987164746810f4e8b88402628b387d39
+
+`.emacs.d` layout  
+
+Steve Purcell (purcell)'s `.emacs.d`  
+https://github.com/purcell/emacs.d
 
 ## Further reading
 https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwivsvPZprnwAhVKThUIHY02D7wQFjAAegQIBRAD&url=http%3A%2F%2Femacsrocks.com%2F&usg=AOvVaw0SVUjrGnYM_DASOe9dJ74N

@@ -83,13 +83,39 @@ This assumes you installed Purcell's emacs.d (which contains the `anaconda-mode`
 ---
 
 ##### Poetry support  
+```
+(defvar myPackages
+  '(...
+    poetry))
+    
+(mapc #'(lambda (package)
+    (unless (package-installed-p package)
+      (package-install package)))
+      myPackages)
+```
+https://github.com/galaunay/poetry.el
 
+`M-x poetry-tracking-mode`
 
 ---
 
 #### EMACS
 
+##### Create new directory
+`+` in directory view  
+
+
+---
+
+##### Don't ask about "modified buffers still exist"  
+
+
+---
+
 ##### Multiple cursors
+
+
+---
 
 ##### "Switch to buffer" displays a list of suggestions/history  
 
@@ -104,10 +130,7 @@ This assumes you installed Purcell's emacs.d (not sure which package does this e
 --- 
 
 
-##### Create new directory
-`+` in directory view  
 
----
 
 ## Further reading
 https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwivsvPZprnwAhVKThUIHY02D7wQFjAAegQIBRAD&url=http%3A%2F%2Femacsrocks.com%2F&usg=AOvVaw0SVUjrGnYM_DASOe9dJ74N

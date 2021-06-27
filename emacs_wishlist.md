@@ -1,13 +1,23 @@
-# Emacs wishlist (WIP)  
+# Emacs Python wishlist (WIP)  
 
-## Select word on double click  
-Should be available by default.   
 
-This assumes you installed Purcell's emacs.d (not sure which package does this exactly
+#### PYTHON
 
-## Import suggestions  
+##### Autocompletion of imports
+`jedi:complete`  
 
-## Autoordering of imports  
+Bear in mind  
+`elpy-config`  
+
+`install jedi` -> `jedi:install-server`  
+
+---
+
+##### Autoformat on save
+
+---
+
+##### Autoordering of imports  
 `sudo apt install isort`  
 
 In Emacs:  
@@ -17,46 +27,87 @@ In Emacs:
 Apply on currently open file:  
 `M-x py-isort-buffer`  
 
+
 Can be made to work automatically on save:  
 https://github.com/paetzke/py-isort.el
 
+---
 
-## Autocompletion of imports
-`jedi:complete`  
+##### Copy and paste from clipboard  
+Use the GUI version of Emacs.  
 
-## Method suggestions  
+---
 
-## Find all instances of variable / class  
+##### Definitions in tooltips (optional)  
+
+
+---
+
+##### Find all instances of variable / class  
 `M-r`  
 
-This assumes you installed Purcell's emacs.d (which contains the `anaconda-mode`).  
+---
 
-## Look up function definition (goto declaration in new pane)  
+
+##### Highlight unused vars  
+
+
+---
+
+##### Import suggestions  
+
+---
+
+##### Look up function definition (goto declaration in new pane)  
 `M-.`
 
 Go back:  
 `M-,`
 
+---
+
+
+##### Method suggestions  
 This assumes you installed Purcell's emacs.d (which contains the `anaconda-mode`).  
 
-## blacken on save  
+---
 
-## Definitions in tooltips (optional)  
+##### Syntax error highlighting
+`elpy`
 
-## Highlight unused vars  
+---
 
-## Insert missing imports  
-`pyimport` ?
+##### Tab-completion of imports  
 
-## Copy and paste from clipboard
 
-## Things to bear in mind  
-`elpy-config`  
+---
 
-`install jedi` -> `jedi:install-server`  
+##### Poetry support  
 
-## Create new directory
+
+---
+
+#### EMACS
+
+##### Multiple cursors
+
+##### "Switch to buffer" displays a list of suggestions/history  
+
+
+---
+
+##### Select word on double click  
+Should be available by default.   
+
+This assumes you installed Purcell's emacs.d (not sure which package does this exactly
+
+--- 
+
+
+##### Create new directory
 `+` in directory view  
 
-## Notes
+---
+
+## Further reading
 https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwivsvPZprnwAhVKThUIHY02D7wQFjAAegQIBRAD&url=http%3A%2F%2Femacsrocks.com%2F&usg=AOvVaw0SVUjrGnYM_DASOe9dJ74N

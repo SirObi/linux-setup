@@ -81,6 +81,13 @@ Use the GUI version of Emacs.
 ---
 
 ##### Import suggestions  
+Now you will see import suggestions when you press Tab.  
+Note that if you have this switched on, you'll have to do indentation with `C-i`.  
+```lisp
+(defun company-keybindings-hook ()
+  (global-set-key (kbd "<tab>") 'company-complete))
+(add-hook 'after-init-hook 'company-keybindings-hook)
+```
 
 ---
 

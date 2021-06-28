@@ -1,5 +1,31 @@
 # Emacs Python wishlist (WIP)  
 
+#### PYTHON - PREREQUISITES  
+
+You can put the following in `init.el`. But it's better to keep it in a separate file, like `init-python.el`, just to keep things clean.  
+`pythonPackages` is an arbitrary name I came up with.  
+```lisp
+;; define list of packages to install
+(defvar pythonPackages
+  '(company-jedi
+    poetry
+    pyenv-mode))
+
+;; install all packages in list
+(mapc #'(lambda (package)
+    (unless (package-installed-p package)
+      (package-install package)))
+      pythonPackages)
+
+;; Add jedi to company backends
+(defun my/python-mode-hook ()
+  (add-to-list 'company-backends 'company-jedi))
+(add-hook 'python-mode-hook 'my/python-mode-hook)
+```
+
+
+
+
 
 #### PYTHON
 
@@ -59,6 +85,15 @@ Use the GUI version of Emacs.
 ---
 
 ##### Look up function definition (goto declaration in new pane)  
+Keybindings:  
+```lisp
+;; Set up jedi keybindings
+(defun jedi-keybindings-hook ()
+  (local-set-key (kbd "C-.") 'jedi:goto-definition)
+  (local-set-key (kbd "C-,") 'jedi:goto-definition-pop-marker))
+(add-hook 'python-mode-hook 'jedi-keybindings-hook)
+```
+
 `C-.`
 
 Go back:  

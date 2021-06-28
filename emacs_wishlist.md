@@ -59,10 +59,10 @@ Use the GUI version of Emacs.
 ---
 
 ##### Look up function definition (goto declaration in new pane)  
-`M-.`
+`C-.`
 
 Go back:  
-`M-,`
+`C-,`
 
 ---
 

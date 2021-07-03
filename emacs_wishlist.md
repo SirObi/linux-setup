@@ -30,12 +30,7 @@ You can put the following in `init.el`. But it's better to keep it in a separate
 #### PYTHON
 
 ##### Autocompletion of imports
-`jedi:complete`  
-
-Bear in mind  
-`elpy-config`  
-
-`install jedi` -> `jedi:install-server`  
+`company` with `jedi` backend  
 
 ---
 
@@ -88,6 +83,8 @@ Note that if you have this switched on, you'll have to do indentation with `C-i`
   (global-set-key (kbd "<tab>") 'company-complete))
 (add-hook 'after-init-hook 'company-keybindings-hook)
 ```
+
+Disregard the above. Just use Purcell's `init-company.el`.  
 
 ---
 
@@ -149,6 +146,11 @@ https://github.com/galaunay/poetry.el
 ---
 
 ##### Multiple cursors
+
+
+---
+
+##### Open clicked file in the same pane  
 
 
 ---

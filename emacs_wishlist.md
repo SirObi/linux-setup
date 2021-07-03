@@ -147,7 +147,7 @@ https://github.com/galaunay/poetry.el
 
 ---
 
-##### Don't create `#something#` files 
+##### Don't create `#something#` or `.#something` files 
 
 
 ---

@@ -173,6 +173,11 @@ https://github.com/galaunay/poetry.el
 
 ---
 
+##### Markdown visualisation 
+
+
+---
+
 ##### Multiple cursors
 
 

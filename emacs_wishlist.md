@@ -152,6 +152,11 @@ https://github.com/galaunay/poetry.el
 
 ---
 
+##### Hide the icons bar from default layout
+
+
+---
+
 ##### Multiple cursors
 
 

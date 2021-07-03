@@ -106,7 +106,9 @@ Go back:
 ---
 
 ##### Syntax error highlighting
-`elpy`
+Use Purcell's `init-flycheck.el`.  
+
+Flycheck supports over 40 different languages.  
 
 ---
 

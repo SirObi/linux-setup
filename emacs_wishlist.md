@@ -152,8 +152,8 @@ https://github.com/galaunay/poetry.el
 
 ---
 
-##### Hide the icons bar from default layout
-
+##### Hide the toolbar menu (the one with icons)  
+`(menu-bar-mode -1)`
 
 ---
 

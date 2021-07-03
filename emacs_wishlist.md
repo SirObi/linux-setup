@@ -1,5 +1,11 @@
 # Emacs Python wishlist (WIP)  
 
+#### INTRODUCTION  
+I've created an Emacs config geared toward Python development.  
+https://github.com/SirObi/emacs-python
+
+Below are my notes on each of the elements of the setup, each corresponding to a specific need a Python developer may have.  
+
 #### PYTHON - PREREQUISITES  
 
 You can put the following in `init.el`. But it's better to keep it in a separate file, like `init-python.el`, just to keep things clean.  

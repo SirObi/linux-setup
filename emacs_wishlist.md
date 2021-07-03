@@ -152,8 +152,18 @@ https://github.com/galaunay/poetry.el
 
 ---
 
-##### Hide the toolbar menu (the one with icons)  
-`(menu-bar-mode -1)`
+##### Hide toolbar (the one with icons)  
+```lisp
+(when (fboundp 'tool-bar-mode)
+  (tool-bar-mode -1))
+```
+
+---
+
+##### Hide menu 
+```lisp
+(menu-bar-mode -1)
+```
 
 ---
 

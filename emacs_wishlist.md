@@ -71,7 +71,12 @@ Use the GUI version of Emacs.
 ---
 
 ##### Find all instances of variable / class  
-`M-r`  
+Use Purcell's `init-projectile.el`.  
+Install `ag` with `brew` (on MacOS) or your Linux package manager (e.g. `apt`).  
+
+Position cursor on variable / class name.  
+`C-c p` to go into Projectile commands.  
+`s s RET` to search.  
 
 ---
 

@@ -189,6 +189,23 @@ https://github.com/galaunay/poetry.el
 ---
 
 ##### "Switch to buffer" displays a list of suggestions/history  
+Use Purcell's `projectile.el`.  
+Add this snippet to use `ag` for searching:  
+```lisp
+;; define list of packages to install
+(defvar projectilePackages
+  '(ag))
+
+;; install all packages in list
+(mapc #'(lambda (package)
+    (unless (package-installed-p package)
+      (package-install package)))
+      projectilePackages)
+```
+
+---
+
+##### "Switch to buffer" displays a list of suggestions/history  
 
 
 ---

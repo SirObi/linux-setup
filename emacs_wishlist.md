@@ -158,6 +158,12 @@ https://github.com/galaunay/poetry.el
 
 ---
 
+
+##### Fuzzy-match file names
+Like here: https://github.com/hlissner/doom-emacs/issues/1552#issue-466366532
+
+---
+
 ##### Hide toolbar (the one with icons)  
 ```lisp
 (when (fboundp 'tool-bar-mode)

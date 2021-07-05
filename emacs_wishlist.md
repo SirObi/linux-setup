@@ -162,6 +162,11 @@ https://github.com/galaunay/poetry.el
 Consider this: https://amitp.blogspot.com/2007/03/emacs-move-autosave-and-backup-files.html
 This solution puts backup and autosave files into a separate directory at the user root.  
 
+In the end, it seems like I simply added this one line:  
+```lisp
+(setq backup-directory-alist `(("." . "~/.saves")))
+```
+
 ---
 
 

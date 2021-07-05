@@ -159,7 +159,8 @@ https://github.com/galaunay/poetry.el
 ---
 
 ##### Don't create `#something#` or `.#something` files 
-
+Consider this: https://amitp.blogspot.com/2007/03/emacs-move-autosave-and-backup-files.html
+This solution puts backup and autosave files into a separate directory at the user root.  
 
 ---
 

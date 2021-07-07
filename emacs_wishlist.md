@@ -147,6 +147,20 @@ https://github.com/galaunay/poetry.el
 
 #### EMACS
 
+##### Automatically refresh package source list if package not found
+```lisp
+(when (cl-find-if-not #'package-installed-p package-selected-packages)
+  (package-refresh-contents)
+  (mapc #'package-install package-selected-packages))
+```
+(where `package-selected-packages` is just the name of the list of packages you want checked.  
+
+Source: 
+https://github.com/emacs-lsp/lsp-dart#quickstart
+
+---
+
+
 ##### Create new directory
 `+` in directory view  
 

@@ -183,6 +183,11 @@ In the end, it seems like I simply added this one line:
 
 ---
 
+##### Don't open clicked files in a new pane
+It can be fairly confusing and annoying.  
+
+
+---
 
 ##### Fuzzy-match file names
 Like here: https://github.com/hlissner/doom-emacs/issues/1552#issue-466366532

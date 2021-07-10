@@ -220,7 +220,15 @@ Like here: https://github.com/hlissner/doom-emacs/issues/1552#issue-466366532
 ---
 
 ##### Multiple cursors
-
+```lisp
+(require-package 'multiple-cursors)
+;; multiple-cursors
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-+") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+```
+(courtesy of Purcell's config)  
 
 ---
 

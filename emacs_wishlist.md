@@ -214,6 +214,11 @@ Like here: https://github.com/hlissner/doom-emacs/issues/1552#issue-466366532
 
 ---
 
+##### Maximize window when opening Emacs
+
+
+---
+
 ##### Multiple cursors
 
 

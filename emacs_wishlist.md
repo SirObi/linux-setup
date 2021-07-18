@@ -189,6 +189,10 @@ It can be fairly confusing and annoying.
 
 ---
 
+##### Fuzzy-match M-x and C-x commands
+
+---
+
 ##### Fuzzy-match file names
 Like here: https://github.com/hlissner/doom-emacs/issues/1552#issue-466366532
 
@@ -237,7 +241,7 @@ Like here: https://github.com/hlissner/doom-emacs/issues/1552#issue-466366532
 
 ---
 
-##### "Switch to buffer" displays a list of suggestions/history  
+##### Search in project with Silver Searcher (ag)  
 Use Purcell's `projectile.el`.  
 Add this snippet to use `ag` for searching:  
 ```lisp
@@ -255,7 +259,7 @@ Add this snippet to use `ag` for searching:
 ---
 
 ##### "Switch to buffer" displays a list of suggestions/history  
-
+Install `vertico` and enable `vertico-mode`  
 
 ---
 

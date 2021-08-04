@@ -116,18 +116,6 @@ Go back:
 
 ---
 
-##### Syntax error highlighting
-Use Purcell's `init-flycheck.el`.  
-
-Flycheck supports over 40 different languages.  
-
----
-
-##### Tab-completion of imports  
-
-
----
-
 ##### Poetry support  
 ```
 (defvar myPackages
@@ -144,6 +132,24 @@ https://github.com/galaunay/poetry.el
 `M-x poetry-tracking-mode`
 
 ---
+
+##### Refactoring support - replace tag (f.x. variable name) across project  
+
+
+---
+
+##### Syntax error highlighting
+Use Purcell's `init-flycheck.el`.  
+
+Flycheck supports over 40 different languages.  
+
+---
+
+##### Tab-completion of imports  
+
+
+---
+
 
 #### EMACS
 

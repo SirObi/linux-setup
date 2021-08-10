@@ -80,8 +80,12 @@ Position cursor on variable / class name.
 
 ---
 
+##### Gray out unnecessary imports  
 
-##### Highlight unused vars  
+
+---
+
+##### Gray out unused vars  
 
 
 ---

@@ -280,9 +280,13 @@ This assumes you installed Purcell's emacs.d (not sure which package does this e
 
 --- 
 
+##### Sonarlint for Emacs
+
+--- 
+
 ## Inspirations  
 
-`.emacs.d` layout  
+`.emacs.d` layout and many of the features
 
 Steve Purcell (purcell)'s `.emacs.d`  
 https://github.com/purcell/emacs.d

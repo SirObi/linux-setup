@@ -251,6 +251,11 @@ Like here: https://github.com/hlissner/doom-emacs/issues/1552#issue-466366532
 
 ---
 
+##### Open projectile search results in the same pane  
+
+
+---
+
 ##### Search in project with Silver Searcher (ag)  
 Use Purcell's `projectile.el`.  
 Add this snippet to use `ag` for searching:  

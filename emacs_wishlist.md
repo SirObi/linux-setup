@@ -254,6 +254,14 @@ Like here: https://github.com/hlissner/doom-emacs/issues/1552#issue-466366532
 
 ---
 
+##### Number of remaining errors in file shown at all times
+This is a nice feature Intellij/Android Studio have.  
+Rather than run your script and discover errors, you'll see that you still have N number of errors left to fix,  
+without having to scan the document visually for error highlights.  
+
+
+---
+
 ##### Open clicked file in the same pane  
 
 

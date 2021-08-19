@@ -259,6 +259,11 @@ This is a nice feature Intellij/Android Studio have.
 Rather than run your script and discover errors, you'll see that you still have N number of errors left to fix,  
 without having to scan the document visually for error highlights.  
 
+Solution:  
+Use Purcell's `init-flycheck.el`.   
+It  displays the number of warnings and errors at the bottom of the screen:   
+`FlyC:1|3` (1 error, 3 warnings)  
+
 
 ---
 

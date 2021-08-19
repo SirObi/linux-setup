@@ -154,6 +154,11 @@ Flycheck supports over 40 different languages.
 
 ---
 
+##### Use flake8 settings from active Poetry env 
+
+
+---
+
 
 #### EMACS
 

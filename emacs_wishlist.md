@@ -6,6 +6,9 @@ https://github.com/SirObi/emacs-python
 
 Below are my notes on each of the elements of the setup, each corresponding to a specific need a Python developer may have.  
 
+#### FIRST - SOME USEFUL COMMANDS (built into Emacs already)  
+`M-x describe-mode` - shows which modes you've got activated.   
+
 #### PYTHON - PREREQUISITES  
 
 You can put the following in `init.el`. But it's better to keep it in a separate file, like `init-python.el`, just to keep things clean.  

@@ -279,6 +279,13 @@ It  displays the number of warnings and errors at the bottom of the screen:
 
 ##### Revert buffer without asking  
 
+```lisp
+(add-hook 'after-init-hook 'global-auto-revert-mode)
+(setq global-auto-revert-non-file-buffers t
+      auto-revert-verbose nil)
+```
+
+Courtesy of Purcell's `init-editing-utils.el`.  
 
 ---
 

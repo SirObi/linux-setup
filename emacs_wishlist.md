@@ -240,11 +240,12 @@ Like here: https://github.com/hlissner/doom-emacs/issues/1552#issue-466366532
 
 ##### Markdown visualisation 
 
-
 ---
 
 ##### Maximize window when opening Emacs
+`(add-to-list 'default-frame-alist '(fullscreen . maximized))`  
 
+Courtesy of https://github.com/501st-alpha1/emacs-init/blob/master/init.el
 
 ---
 

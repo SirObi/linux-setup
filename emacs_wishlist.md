@@ -277,6 +277,11 @@ It  displays the number of warnings and errors at the bottom of the screen:
 
 ---
 
+##### Revert buffer without asking  
+
+
+---
+
 ##### Search in project with Silver Searcher (ag)  
 Use Purcell's `projectile.el`.  
 Add this snippet to use `ag` for searching:  

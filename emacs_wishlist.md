@@ -65,6 +65,7 @@ https://github.com/paetzke/py-isort.el
 
 ##### Copy and paste from clipboard  
 Use the GUI version of Emacs.  
+It can me made to work with Emacs in the terminal, but the GUI version saves you a lot of pain across the board.  
 
 ---
 

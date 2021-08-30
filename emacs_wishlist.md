@@ -84,6 +84,12 @@ Position cursor on variable / class name.
 
 ---
 
+
+##### Flake8 and mypy from `pyproject.toml`  
+ 
+
+---
+
 ##### Gray out unnecessary imports  
 
 

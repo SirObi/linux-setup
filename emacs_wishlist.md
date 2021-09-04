@@ -330,6 +330,13 @@ This assumes you installed Purcell's emacs.d (not sure which package does this e
 
 --- 
 
+## Additional useful utils  
+
+##### Check in which order emacs modes are loaded  
+
+--- 
+
+
 ## Inspirations  
 
 `.emacs.d` layout and many of the features

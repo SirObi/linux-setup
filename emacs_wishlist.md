@@ -86,7 +86,7 @@ Position cursor on variable / class name.
 
 
 ##### Flake8 and mypy from `pyproject.toml`  
- 
++ fall back on Emacs's own Flake8 and mypy if they're not installed in a project.  
 
 ---
 

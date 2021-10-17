@@ -44,6 +44,10 @@ You can put the following in `init.el`. But it's better to keep it in a separate
 ---
 
 ##### Autoformat on save
+Install `blacken`:  
+https://github.com/pythonic-emacs/blacken
+
+`(add-hook 'python-mode-hook 'blacken-mode)`
 
 ---
 

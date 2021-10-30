@@ -74,7 +74,8 @@ It can me made to work with Emacs in the terminal, but the GUI version saves you
 ---
 
 ##### Definitions in tooltips (optional)  
-
+`jedi:show-doc` shows documentation in a new buffer.  
+So you need a way to move it to a tooltip/minibuffer.
 
 ---
 

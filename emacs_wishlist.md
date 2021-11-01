@@ -255,6 +255,10 @@ Like here: https://github.com/hlissner/doom-emacs/issues/1552#issue-466366532
 
 ---
 
+##### Kill all frames except current one
+ 
+---
+
 ##### Markdown visualisation 
 
 ---

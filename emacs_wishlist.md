@@ -297,6 +297,13 @@ It  displays the number of warnings and errors at the bottom of the screen:
 
 ---
 
+
+##### Open file in dired (without using mouse)
+`C-x C-f` and start typing file name.  
+
+---
+
+
 ##### Open projectile search results in the same pane  
 
 

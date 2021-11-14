@@ -231,6 +231,13 @@ It can be fairly confusing and annoying.
 
 ---
 
+##### Don't save while typing
+If we want to have autosaving and formatting on save, we need to make the program wait until we stop typing, rather than simply save every N seconds.    
+Otherwise the user experience will be really annoying.  
+
+---
+
+
 ##### Fuzzy-match M-x and C-x commands
 
 ---

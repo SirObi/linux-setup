@@ -1,0 +1,78 @@
+[tool.poetry]
+name = "your package name"
+version = "0.1.0"
+description = "Description for your package"
+authors = ["your git username <your git email>"]
+packages = [
+    { include = "your package name" },
+    { include = "cli.py (if you have one)" },
+]
+exclude = ["tests"]
+readme = "README.md"
+homepage = "URL of your repo"
+repository = "URL of your repo"
+keywords = ["any keywords you might care about"]
+classifiers = [
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Documentation",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+types-setuptools = "^57.0.2"        # Stub files for Mypy type checker
+types-toml = "^0.1.5"               # Stub files for Mypy type checker
+
+[tool.poetry.dev-dependencies]
+pytest = "*"                        # idiomatic testing framework for python
+pytest-cov = "*"                    # Coverage support for pytest
+pytest-sugar = "*"                  # Prettier output for pytest runs
+mypy = "*"                          # Static type checking
+types-setuptools = "^57.0.2"        # Stub files for Mypy type checker
+types-toml = "^0.1.5"               # Stub files for Mypy type checker
+flake9 = "*"                        # flake8, with support for pyproject.toml
+black = "*"                         # the code formatter to end all formatting discussions
+ipdb = "*"                          # pdb debugger using ipython
+python-dotenv = "^0.15.0"           # Allows you to read in env vars from a .env file
+isort = "^5.9.3"                    # Sorts import statements according to best practices
+pre-commit = "^2.15.0"              # Allows you to run linting and other hooks before git commit/git push
+
+[tool.flake8]
+max-line-length = 120
+max-complexity = 10
+ignore = ["W504", "W503", "E231", "E203", "C901"]
+exclude = ".ipynb_checkpoints .mypy_cache .venv"
+
+[tool.pytest.ini_options]
+junit_family = "xunit2"
+norecursedirs = ".mypy_cache .venv .reports"
+
+[tool.coverage.report]
+omit = ["*/__init__.py", ".mypy_cache", ".venv", ".reports"]
+show_missing = true
+
+[tool.coverage.run]
+omit = ["*/__init__.py", ".mypy_cache", ".venv", ".reports"]
+
+[tool.black]
+line-length = 120
+target-version = ['py38']
+exclude = '''
+(
+  /(
+    | \.git
+    | \.mypy_cache
+    | \.venv
+  )/
+)
+'''
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+whatever_you_call_your_script = 'cli:main'

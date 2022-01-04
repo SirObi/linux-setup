@@ -20,8 +20,6 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.8"
-types-setuptools = "^57.0.2"        # Stub files for Mypy type checker
-types-toml = "^0.1.5"               # Stub files for Mypy type checker
 
 [tool.poetry.dev-dependencies]
 pytest = "*"                        # idiomatic testing framework for python

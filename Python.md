@@ -17,7 +17,16 @@ Do some nerd magic:
 `git clone https://github.com/pyenv/pyenv.git ~/.pyenv`  
 `echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc`  
 `echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc`  
+`echo 'export PATH="$PYENV_ROOT/shims:$PATH"' >> ~/.zshrc`  
 `echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc`  
+
+Your shell should contain the following now:
+```
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+```
 
 Reload your shell:  
 `source ~/.zshrc`  
@@ -25,7 +34,7 @@ Reload your shell:
 See if pyenv works (should print a list of Python versions available online):  
 `pyenv install --list`  
 
-Install build dependencies:  
+Install build dependencies (not needed on MacOS, if you've got Homebrew and xcode dev tools installed already):  
 `sudo apt install --no-install-recommends make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev`  
 
 Install a fresh distribution of Python:  
@@ -39,8 +48,7 @@ Python 3.8.3 is now the default for your shell.
 You can use `python global` to set it to something else. Or `python local` to assign a Python version to a project you're currently in.  
 For more info, check out this:  
 https://github.com/pyenv/pyenv#installation  
-
-## Install pipenv  
+https://github.com/mahmoud/boltons
 Pipenv allows you to create virtual environments, avoid the usual pip problems, and it keeps you in a flow state (well, usually).  
 `sudo apt install pipenv`  
 
@@ -57,3 +65,6 @@ Run commands from the template's README:
 `pipenv install --dev`  
 `pipenv run pre-commit install -t pre-commit`  
 `pipenv run pre-commit install -t pre-push`  
+
+## Notes
+https://github.com/mahmoud/boltons

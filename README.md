@@ -35,14 +35,26 @@ For lightning speed and flow states, you want to start an emacs daemon and then 
 `emacsclient` command.  
 
 ### Start emacs daemon
-This might take a while the first time around (but much quicker after that):  
+Use the following guide to make the Emacs server start up on login: 
+
+**Linux**  
+https://www.emacswiki.org/emacs/EmacsAsDaemon  
+
+**Mac**  
+http://www.rockhoppertech.com/blog/emacs-daemon-on-macos/  
+Alternatively:  
+https://www.hhyu.org/posts/emacs_clientserver/
+
+Or if you're keen to just try it out and get Emacs running right now: 
 `emacs --daemon`  
+(This might take a while the first time around (but much quicker after that))
+
 
 ### Use emacsclient command  
-You can now run emacs with the `emacslient` command.
+You can now open the current directory with emacs by executing the `emacsclient .` command.
 
-It's a bit of a mouthful (fingerful?) to type - I prefer to set an alias here:  
-`echo -e 'alias e="emacsclient -a -c"' >> ~/.zshrc`  
+It's a bit of a mouthful (fingerful?) to type - I prefer to alias `emacsclient` to `e`:  
+`echo -e 'alias e="emacsclient -a -c"' >> ~/.zshrc`  (or whatever your shell config file is, e.g. `.bashrc`)  
 
 Now you can open your files with Emacs like so:  
 `e somefile`  

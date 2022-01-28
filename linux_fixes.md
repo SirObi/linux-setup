@@ -16,3 +16,7 @@ https://support.system76.com/articles/upgrade-pop/
 https://techwiser.com/fix-airpods-not-working-on-ubuntu/  
 
 Pulseaudio GUI is then helpful in setting them to Headset mode (so that the mic also works).  
+
+**Running Battle For Middlearth with mods**  
+WINEPREFIX=<whichever version of Windows emulator on your machine you want to use> wine lotrbfme2ep1.exe -mod "C:/Program Files/AOTR7.2/aotr"
+

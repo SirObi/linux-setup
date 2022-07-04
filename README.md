@@ -8,6 +8,11 @@ sudo apt install python3-pip
 pip3 install ansible
 ```
 
+On Linux, pip might install ansible into `~/.local/bin`, which might not be on the `$PATH`.  
+Solution:  
+`export PATH=$PATH:/.local/bin`  
+(it will be set permanently in a shell file later)  
+
 
 ## Note
 MacOS installation will look very similar.  

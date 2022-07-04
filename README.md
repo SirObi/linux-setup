@@ -1,6 +1,14 @@
 # linux-setup
 Set of Terminal commands for quick, productive dev setup
 
+
+## THIS IS THE NEW WAY, USING ANSIBLE (WORK IN PROGRESS):  
+```shell
+sudo apt install python3-pip  
+pip3 install ansible
+```
+
+
 ## Note
 MacOS installation will look very similar.  
 Just replace `sudo apt` with `brew`.  

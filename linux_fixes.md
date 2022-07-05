@@ -15,7 +15,17 @@ https://support.system76.com/articles/upgrade-pop/
 **Airpods not working**
 https://github.com/pop-os/pop/issues/810
 
-Pulseaudio GUI is then helpful in setting them to Headset mode (so that the mic also works).  
+`sudo nano /etc/bluetooth/main.conf`  
+
+```conf
+[General]
+ControllerMode = bredr
+```
+
+And RESTART COMPUTER.
+
+
+~~Pulseaudio GUI is then helpful in setting them to Headset mode (so that the mic also works).~~  (unfortunately, Pulseaudio is no longer used in Pop!OS as of version 22)
 
 **Running Battle For Middlearth with mods**  
 WINEPREFIX=<whichever version of Windows emulator on your machine you want to use> wine lotrbfme2ep1.exe -mod "C:/Program Files/AOTR7.2/aotr"

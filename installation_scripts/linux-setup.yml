@@ -30,17 +30,17 @@
     register: zsh_highlighting_dir
 
   - name: Add syntax highlighting for zsh
-    shell: git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    shell: git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
     when: not zsh_highlighting_dir.stat.exists
 
   - name: Check if autosuggestions plugin installed
     stat:
       path: "~/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
-    register: zsh_autosuggestions
+    register: zsh_autosuggestions_dir
 
   - name: Add autosuggestions for zsh
-    shell: git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-    when: not zsh_autosuggestions.stat.exists
+    shell: git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+    when: not zsh_autosuggestions_dir.stat.exists
 
   - name: Check if autojump installed
     package_facts:
@@ -60,8 +60,10 @@
     when: not linux_setup_repo.stat.exists
 
   - name: Use zshrc config from the repo
-    shell: cd linux-setup && cp .zshrc ~/.zshrc
-    when: not linux_setup_repo.stat.exists
+    shell: cp ~/linux-setup/.zshrc ~/.zshrc
+
+  - name: Reload shell
+    shell: source ~/.zshrc
 
   - name: Install Snap
     shell: sudo apt install -y snapd

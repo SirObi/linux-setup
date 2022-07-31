@@ -13,6 +13,13 @@ Solution:
 `export PATH=$PATH:/.local/bin`  
 (it will be set permanently in a shell file later)  
 
+### Clone this repo  
+Set up Git, if you're starting from scratch: 
+- `git config user.name SirObi`  
+- `git config user.email obi.orciuch@gmail.com`  
+- `ssh-keygen -t rsa`  
+- `ssh-add /home/obi/.ssh/id_rsa` (or whatever my username is on a given machine)  
+
 
 ## Note
 MacOS installation will look very similar.  

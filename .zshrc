@@ -20,3 +20,7 @@ alias pbpaste="xclip -selection clipboard -o"
 alias e="emacsclient -a -c"
 
 . /usr/share/autojump/autojump.sh
+
+# Flutter
+CHROME_EXECUTABLE=/snap/bin/chromium
+export CHROME_EXECUTABLE

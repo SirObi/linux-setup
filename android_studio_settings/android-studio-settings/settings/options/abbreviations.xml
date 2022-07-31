@@ -1,0 +1,7 @@
+<application>
+  <component name="AbbreviationManager">
+    <abbreviations>
+      <action id="Macro.lambda_function_autocomplete" />
+    </abbreviations>
+  </component>
+</application>

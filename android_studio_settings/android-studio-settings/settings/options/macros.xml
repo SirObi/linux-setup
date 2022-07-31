@@ -1,0 +1,28 @@
+<application>
+  <component name="ActionMacroManager">
+    <macro name="lambda_function_autocomplete">
+      <typing text-keycode="57:1">(</typing>
+      <action id="EditorRight" />
+      <typing text-keycode="32:0;61:0;46:1;32:0;91:1;93:1">&amp;#x20;=&gt;&amp;#x20;{}</typing>
+      <action id="EditorLeft" />
+    </macro>
+    <macro name="function_blank_autocomplete">
+      <typing text-keycode="57:1">(</typing>
+      <action id="EditorRight" />
+      <typing text-keycode="32:0;91:1;93:1">&amp;#x20;{}</typing>
+      <action id="EditorLeft" />
+    </macro>
+    <macro name="test_new_flutter">
+      <typing text-keycode="84:0;69:0;83:0;84:0;57:1;222:0">test('</typing>
+      <action id="EditorRight" />
+      <typing text-keycode="44:0;32:0;57:1">,&amp;#x20;(</typing>
+      <action id="EditorRight" />
+      <typing text-keycode="32:0;91:1;93:1">&amp;#x20;{}</typing>
+      <action id="EditorLeft" />
+      <action id="EditorEnter" />
+      <action id="EditorDown" />
+      <typing text-keycode="59:0">;</typing>
+      <action id="EditorUp" />
+    </macro>
+  </component>
+</application>

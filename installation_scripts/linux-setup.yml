@@ -62,8 +62,7 @@
   - name: Use zshrc config from the repo
     shell: cp ~/linux-setup/.zshrc ~/.zshrc
 
-  - name: Reload shell
-    shell: source ~/.zshrc
+  # You might need to manually reload the shell at this point: source ~/.zshrc
 
   - name: Install Snap
     shell: sudo apt install -y snapd

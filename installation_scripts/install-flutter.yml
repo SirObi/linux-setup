@@ -12,6 +12,12 @@
     shell: sudo apt install -y snapd
     when: "'snap' not in ansible_facts.packages"
 
-  - name: Install Visual Studio Code
-    shell: sudo snap install code --classic
-    when: "'code' not in ansible_facts.packages"
+  - name: Install Flutter
+    shell: sudo snap install flutter --classic
+    when: "'flutter' not in ansible_facts.packages"
+
+  - name: Install Chrome/Chromium
+    shell: sudo snap install chromium
+    when: "'chromium' not in ansible_facts.packages"
+
+

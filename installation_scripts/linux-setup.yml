@@ -1,0 +1,69 @@
+---
+- name: Configure shell
+  hosts: localhost
+  connection: local
+  tasks:
+
+  - name: cd to user root dir
+    shell: cd
+
+  - name: Enable ability to check for existing packages
+    package_facts:
+      manager: "auto"
+
+  - name: Install zshell
+    shell: sudo apt install -y zsh
+    when: "'zsh' not in ansible_facts.packages"
+
+  - name: Check if oh-my-zsh installed
+    stat:
+      path: "~/.oh-my-zsh"
+    register: oh_my_zsh_config
+
+  - name: Install oh-my-zsh
+    shell: curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh; zsh
+    when: not oh_my_zsh_config.stat.exists
+
+  - name: Check if highlighting plugin installed
+    stat:
+      path: "~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
+    register: zsh_highlighting_dir
+
+  - name: Add syntax highlighting for zsh
+    shell: git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    when: not zsh_highlighting_dir.stat.exists
+
+  - name: Check if autosuggestions plugin installed
+    stat:
+      path: "~/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
+    register: zsh_autosuggestions
+
+  - name: Add autosuggestions for zsh
+    shell: git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    when: not zsh_autosuggestions.stat.exists
+
+  - name: Check if autojump installed
+    package_facts:
+      manager: auto
+
+  - name: Install autojump
+    shell: sudo apt install autojump
+    when: "'autojump' not in ansible_facts.packages"
+
+  - name: Check if linux-setup repo downloaded
+    stat:
+      path: "~/linux-setup"
+    register: linux_setup_repo
+
+  - name: Download linux-setup repo
+    shell: git clone git@github.com:SirObi/linux-setup.git
+    when: not linux_setup_repo.stat.exists
+
+  - name: Use zshrc config from the repo
+    shell: cd linux-setup && cp .zshrc ~/.zshrc
+    when: not linux_setup_repo.stat.exists
+
+  - name: Install Snap
+    shell: sudo apt install -y snapd
+    when: "'snapd' not in ansible_facts.packages"
+

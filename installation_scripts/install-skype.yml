@@ -1,0 +1,17 @@
+---
+- name: Install Skype
+  hosts: localhost
+  connection: local
+  tasks:
+
+  - name: Check if Skype installed
+    package_facts:
+      manager: "auto"
+
+  - name: Install dependencies for Skype
+    shell: sudo apt install libgdk-pixbuf-xlib-2.0-0 libgdk-pixbuf2.0-0
+    when: "'skype' not in ansible_facts.packages"
+
+  - name: Install Skype
+    shell: sudo dpkg -i ~/Downloads/skypeforlinux-64.deb
+    when: "'skype' not in ansible_facts.packages"

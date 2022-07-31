@@ -19,6 +19,7 @@ Set up Git, if you're starting from scratch:
 - `git config user.email obi.orciuch@gmail.com`  
 - `ssh-keygen -t rsa`  
 - `ssh-add /home/obi/.ssh/id_rsa` (or whatever my username is on a given machine)  
+- `cat /home/obi/.ssh/id_rsa.pub` and add that key in GitHub  
 
 
 ## Note

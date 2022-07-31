@@ -1,0 +1,4 @@
+Dart
+com.bloc.intellij_generator_plugin
+io.flutter
+izhangzhihao.rainbow.brackets

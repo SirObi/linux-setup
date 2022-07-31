@@ -1,9 +1,0 @@
-Dart
-andrasferenczi.dart-data-plugin
-com.ankit.mahadik.json.dart.class
-com.bloc.intellij_generator_plugin
-com.shuzijun.markdown-editor
-com.spidev.pubassist
-com.thoughtworks.gauge
-io.flutter
-org.intellij.plugins.markdown
